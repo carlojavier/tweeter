@@ -1,18 +1,21 @@
-div {
+#nav-bar {
     background-color: #00a087;
     background-size: contain;
-    width: 1070px;
+    width: 100%;
     height: 80px;
     padding-left: 2em;
     padding-right: 2em;
     color: #e8fdff;
 }
 
-.header {
+#nav-bar .header {
     float: left;
     line-height: 80px;
+    font-size: 30px;
 }
 
-.logo {
+#nav-bar .logo {
     float: left;
+    height: 80px;
+    width: 80px;
 }
