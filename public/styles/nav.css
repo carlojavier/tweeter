@@ -1,0 +1,18 @@
+div {
+    background-color: #00a087;
+    background-size: contain;
+    width: 1070px;
+    height: 80px;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: #e8fdff;
+}
+
+.header {
+    float: left;
+    line-height: 80px;
+}
+
+.logo {
+    float: left;
+}
