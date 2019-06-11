@@ -1,0 +1,24 @@
+.new-tweet {
+    border: 4px;
+    border-style: solid;
+    border-color: darkred;
+    border-radius: 20px;
+    background: coral;
+    padding: 14px;
+
+}
+
+.new-tweet textarea {
+    width: 100%;
+    margin-right: 5px;
+    padding: 10px;
+    padding-top: 5px;
+
+}
+
+.new-tweet h2 {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 0px;
+}
