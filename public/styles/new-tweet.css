@@ -1,9 +1,9 @@
 .new-tweet {
     border: 4px;
     border-style: solid;
-    border-color: darkred;
+    border-color: dimgrey;
     border-radius: 20px;
-    background: coral;
+    background: lightgrey;
     padding: 14px;
 
 }
@@ -13,12 +13,19 @@
     margin-right: 5px;
     padding: 10px;
     padding-top: 5px;
+    padding-bottom: 20px;
 
 }
 
 .new-tweet h2 {
-    color: white;
+    color: black;
     text-align: left;
-    font-size: 30px;
+    font-size: 35px;
     padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.new-tweet hr {
+    color: black;
+
 }
