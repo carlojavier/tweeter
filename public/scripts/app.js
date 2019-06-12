@@ -8,16 +8,11 @@ $(document).ready(function() {
     console.log("ready!");
 
   function renderTweets(tweets) {
-      // loops through tweets
-      // calls createTweetElement for each tweet
-      // takes return value and appends it to the tweets container
       tweets.forEach((tweet, i) => {
         var $tweet = createTweetElement(tweet);
-        $('#tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+        $('#tweet-container').append($tweet); 
       });
-      // Test / driver code (temporary)
-    // console.log($tweet); // to see what it looks like
-
+     
   }
 
   function createTweetElement({ user, content, created_at }) {
@@ -47,8 +42,6 @@ $(document).ready(function() {
     return tweet;
   }
 
-
-  // Test / driver code (temporary). Eventually will get this from the server.
   const data = [
     {
       "user": {
@@ -95,12 +88,7 @@ $(document).ready(function() {
       "created_at": 1461113796368
     }
   ];
-
-
+  
   renderTweets(data);
   
-
-
 });
-
-// });
