@@ -1,0 +1,16 @@
+#tweet-container {
+    border: 4px;
+    border-style: solid;
+    border-color: dimgrey;
+    border-radius: 20px;
+    background: lightgrey;
+    padding: 14px;
+    margin-top: 24px;
+
+}
+
+#tweet-container .logo {
+    float: left;
+    height: 80px;
+    width: 80px;
+}

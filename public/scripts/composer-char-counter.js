@@ -7,8 +7,6 @@ $(document).ready(function() {
         var length = $(this).val().length;
         length = totalCharacters - length;
         $('.counter').text(length);
-        console.log(length)
-
 
         if (length < 0) {
             $('.counter').css('color', 'red');
