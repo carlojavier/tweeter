@@ -30,15 +30,6 @@ function createTweetElement(tweets) {
         .text(tweets.created_at)
         .appendTo(user);
         
-
-
-
-    //                     
-    //                  
-    //                 <p>The worst thing about prison was... the #dementors</p>
-    //                 <hr>
-    //                 <footer class="tweet-bottom">10 days ago</footer>
-    //             </article>
 return user;
 }
 

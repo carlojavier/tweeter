@@ -12,12 +12,13 @@
 .tweet-header {
     background-color: lightgrey;
     width: 100%;
+    height: 50px;
     
 }
 
 .tweet-header h2 {
     margin: 0;
-    padding: 12px;
+    padding: 10px;
     width: 50%;
 }
 
@@ -28,6 +29,8 @@ article.tweet-content header.tweet-header p {
 
 .logo {
     float: left;
+    height: 50px;
+    width: 50px;
 }
 
 .tweet-content p {
@@ -36,7 +39,12 @@ article.tweet-content header.tweet-header p {
 }
 
 .tweet-bottom {
+    border-top: 2px;
+    border-top-style: solid;
     height: 2px;
+    padding-left: 20px;
+    padding-top: 4px;
+    
 }
 
 .tweet-content:hover {
