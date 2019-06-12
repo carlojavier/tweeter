@@ -42,6 +42,18 @@ $(document).ready(function() {
     return tweet;
   }
 
+  $(() => {
+    const BASE_URL = '/tweets';
+
+  $('#sentTweet').on('submit', (event) => {
+    event.preventDefault();
+    $.post(`${BASE_URL}`, $('#sentTweet').serialize(),(newTweet) => {
+      // createTweet(newTweet);
+      console.log("something")
+    })
+
+  })
+
   const data = [
     {
       "user": {
@@ -90,5 +102,5 @@ $(document).ready(function() {
   ];
 
   renderTweets(data);
-  
+}) 
 });
