@@ -88,7 +88,7 @@ $(document).ready(function() {
       "created_at": 1461113796368
     }
   ];
-  
+
   renderTweets(data);
   
 });
