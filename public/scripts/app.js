@@ -6,7 +6,8 @@
 $(document).ready(function () {
   // --- our code goes here ---
   console.log("ready!");
-
+  $('.new-tweet').slideToggle()
+  
   function renderTweets(tweets) {
     tweets.forEach((tweet, i) => {
       const $tweet = createTweetElement(tweet);
@@ -65,7 +66,8 @@ $(document).ready(function () {
 
   $('.compose').click(function() {
     console.log("click");
-    $('.new-tweet').slideToggle();
+    $('.new-tweet').slideToggle()
+    $('.textarea').focus();
   });
 
 })
