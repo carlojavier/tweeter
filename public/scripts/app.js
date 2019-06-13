@@ -56,7 +56,9 @@ $(document).ready(function () {
     } else if ($text > 140 ) {
       alert("keep it under 140 please.")
     } else {
-      $.post(`/tweets`, $('#sentTweet').serialize(), (newTweet) => {})
+      $.post(`/tweets`, $('#sentTweet').serialize(), (newTweet) => {
+        loadTweets(newTweet);
+      })
     }
 
   })
