@@ -53,20 +53,15 @@ $(document).ready(function () {
   $('#sentTweet').on('submit', (event) => {
     event.preventDefault();
     const $text = $('textarea').val().length
-    if ($text === 0 || $text >140) {
+    if ($text === 0 || $text > 140) {
       $('.error-message').slideDown();
     } else {
+      $('.error-message').slideUp();
       $.post(`/tweets`, $('#sentTweet').serialize(), (newTweet) => {
         loadTweets(newTweet);
+        $('textarea').val('');
       })
-    }
-
-    // if ($text === 0) {
-    //   alert("umm, say something?")
-    // } else if ($text > 140 ) {
-    //   alert("keep it under 140 please.")
-    // } else {
-    
+    }  
   })
 
   $('.compose').click(function() {
