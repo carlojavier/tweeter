@@ -7,6 +7,7 @@ $(document).ready(function () {
   // --- our code goes here ---
   console.log("ready!");
   $('.new-tweet').slideToggle()
+  $('.error-message').slideToggle()
   
   function renderTweets(tweets) {
     tweets.forEach((tweet, i) => {
@@ -52,16 +53,20 @@ $(document).ready(function () {
   $('#sentTweet').on('submit', (event) => {
     event.preventDefault();
     const $text = $('textarea').val().length
-    if ($text === 0) {
-      alert("umm, say something?")
-    } else if ($text > 140 ) {
-      alert("keep it under 140 please.")
+    if ($text === 0 || $text >140) {
+      $('.error-message').slideDown();
     } else {
       $.post(`/tweets`, $('#sentTweet').serialize(), (newTweet) => {
         loadTweets(newTweet);
       })
     }
 
+    // if ($text === 0) {
+    //   alert("umm, say something?")
+    // } else if ($text > 140 ) {
+    //   alert("keep it under 140 please.")
+    // } else {
+    
   })
 
   $('.compose').click(function() {
