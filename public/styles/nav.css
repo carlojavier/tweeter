@@ -19,3 +19,19 @@
     height: 80px;
     width: 80px;
 }
+
+#nav-bar .compose {
+    float: right;
+    height: 65px;
+    width: 100px;
+    margin-top: 8px;
+    /* color: white; */
+    border-style: solid;
+    border-radius: 5px;
+    border-color: darkred;
+    opacity:  0.5;
+}
+#nav-bar .compose:hover {
+    opacity: 1;
+}
+

@@ -10,7 +10,7 @@ $(document).ready(function () {
   function renderTweets(tweets) {
     tweets.forEach((tweet, i) => {
       const $tweet = createTweetElement(tweet);
-      $('#tweet-container').append($tweet);
+      $('#tweet-container').prepend($tweet);
     });
   }
 
@@ -62,5 +62,10 @@ $(document).ready(function () {
     }
 
   })
+
+  $('.compose').click(function() {
+    console.log("click");
+    $('.new-tweet').slideToggle();
+  });
 
 })

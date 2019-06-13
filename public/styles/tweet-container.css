@@ -3,34 +3,32 @@
     border-style: solid;
     border-radius: 5px;
     margin-top: 14px;
-    padding-top: 0px;
     padding-bottom: 36px;
     opacity: 0.5;
-
 }
 
 .tweet-header {
-    background-color: lightgrey;
+    background-color: deepskyblue;
     width: 100%;
     height: 60px;
-    
+    padding-top: 15px;
 }
 
 .tweet-header h2 {
-    margin: 0;
     padding: 12px;
-    padding-left: 16px;
-    width: 70%;
+    padding-left: 60px;
+    padding-top: 0px;
 }
 
 article.tweet-content header.tweet-header p {
-    width: 20%;
     float: right;
 }
 
 .logo {
     float: left;
-
+    border-radius: 50%;
+    padding-top: 0px;
+    
 }
 
 .tweet-content p {

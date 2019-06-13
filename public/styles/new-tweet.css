@@ -1,9 +1,9 @@
 .new-tweet {
     border: 4px;
     border-style: solid;
-    border-color: dimgrey;
+    border-color: navy;
     border-radius: 5px;
-    background: lightgrey;
+    background: deepskyblue;
     padding: 14px;
 
 }
@@ -18,13 +18,16 @@
 }
 
 .new-tweet h2 {
-    color: black;
+    color: navy;
     text-align: left;
-    font-size: 35px;
-
+    font-size: 32px;
+    margin-bottom:  0px;
 }
 
 .new-tweet hr {
-    color: black;
+    color: navy;
+    height: 1px;
+    background-color: navy;
+
 
 }
