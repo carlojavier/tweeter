@@ -6,6 +6,8 @@
     padding-left: 2em;
     padding-right: 2em;
     color: #e8fdff;
+    position: fixed;
+    z-index: 900;
 }
 
 #nav-bar .header {
