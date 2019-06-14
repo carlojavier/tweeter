@@ -28,7 +28,11 @@
     color: navy;
     height: 1px;
     background-color: navy;
-
+}
+.flextweet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
 

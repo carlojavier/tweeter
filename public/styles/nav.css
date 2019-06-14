@@ -12,6 +12,7 @@
     float: left;
     line-height: 80px;
     font-size: 30px;
+    color: navy;
 }
 
 #nav-bar .logo {
@@ -23,15 +24,18 @@
 #nav-bar .compose {
     float: right;
     height: 65px;
-    width: 100px;
+    width: 120px;
     margin-top: 8px;
-    /* color: white; */
     border-style: solid;
     border-radius: 5px;
-    border-color: darkred;
-    opacity:  0.5;
+    border-color: navy;
+    opacity: 0.5;
 }
+
+#nav-bar span {
+    padding-right: 2px;
+}
+
 #nav-bar .compose:hover {
     opacity: 1;
 }
-
