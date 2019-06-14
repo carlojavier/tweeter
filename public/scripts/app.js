@@ -34,10 +34,23 @@ $(document).ready(function () {
     $('<p>')
       .text(content.text)
       .appendTo(tweet);
-    $('<footer>')
+    const footer = $('<footer>')
       .addClass("tweet-bottom")
       .text(moment(created_at).fromNow())
+      .addClass("icons")
       .appendTo(tweet);
+    const icons =  $('<div>')
+      .addClass("icons")
+      .appendTo(footer);
+      $('<i>')
+      .addClass("fas fa-flag")
+      .appendTo(icons);
+      $('<i>')
+      .addClass("fas fa-retweet")
+      .appendTo(icons);
+      $('<i>')
+      .addClass("fas fa-heart")
+      .appendTo(icons);
     //     //
     return tweet;
   }

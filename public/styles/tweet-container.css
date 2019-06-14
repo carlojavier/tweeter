@@ -38,13 +38,16 @@ article.tweet-content header.tweet-header p {
 }
 
 .tweet-bottom {
+    display: flex;
+    justify-content: space-between;
     border-top: 2px;
     border-top-style: solid;
     height: 2px;
-    padding-left: 20px;
-    padding-top: 4px;
-    
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-right: 10px;
 }
+
 
 .tweet-content:hover {
     opacity: 1;

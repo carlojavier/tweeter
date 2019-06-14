@@ -37,7 +37,14 @@
 }
 
 .new-tweet .error-message{
-    color: red;
+    color: navy;
+    border-style: solid;
+    border-color: navy;
+    margin-top: 4px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding: 2px;
+
     
 
 }
