@@ -65,14 +65,19 @@ $(document).ready(function () {
 
   $('#sentTweet').on('submit', (event) => {
     event.preventDefault();
-    const $text = $('textarea').val().length
-    if ($text === 0 || $text > 140) {
-      $('.error-message').slideDown();
+    const $form = $(event.target);
+    const $textarea = $form.find('textarea');
+    const $counter = $form.find('.counter');
+    const textLength = $textarea.val().length
+    const $errorMessage = $('.error-message');
+    if (textLength === 0 || textLength > 140) {
+      $errorMessage.slideDown();
     } else {
-      $('.error-message').slideUp();
-      $.post(`/tweets`, $('#sentTweet').serialize(), (newTweet) => {
+      $errorMessage.slideUp();
+      $.post(`/tweets`, $form.serialize(), (newTweet) => {
         loadTweets(newTweet);
-        $('textarea').val('');
+        $textarea.val('');
+        $counter.text(140);
       })
     }  
   })
