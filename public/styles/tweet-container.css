@@ -11,7 +11,7 @@
     background-color: deepskyblue;
     width: 100%;
     height: 60px;
-    padding-top: 15px;
+    padding-top: 1px;
 }
 
 .tweet-header h2 {
@@ -32,6 +32,7 @@ article.tweet-content header.tweet-header p {
 }
 
 .tweet-content p {
+    word-wrap: break-word;
     margin: 24px;
     height: 36px;
 }

@@ -36,7 +36,7 @@ $(document).ready(function () {
       .appendTo(tweet);
     $('<footer>')
       .addClass("tweet-bottom")
-      .text(created_at)
+      .text(moment(created_at).fromNow())
       .appendTo(tweet);
     //     //
     return tweet;
