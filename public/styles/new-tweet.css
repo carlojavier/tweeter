@@ -29,6 +29,7 @@
     height: 1px;
     background-color: navy;
 }
+
 .flextweet {
     display: flex;
     flex-direction: row;

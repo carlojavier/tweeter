@@ -4,8 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function () {
-  // --- our code goes here ---
-  console.log("ready!");
+  
   $('.new-tweet').slideToggle()
   $('.error-message').slideToggle()
   
@@ -17,12 +16,12 @@ $(document).ready(function () {
   }
 
   function createTweetElement({ user, content, created_at }) {
-    const tweet = $("<article>").addClass("tweet-content");
-    const header = $("<header>")
-      .addClass("tweet-header")
+    const tweet = $('<article>').addClass('tweet-content');
+    const header = $('<header>')
+      .addClass('tweet-header')
       .appendTo(tweet);
     $('<img>')
-      .addClass("logo")
+      .addClass('logo')
       .attr("src", user.avatars.small)
       .appendTo(header);
     $('<p>')
@@ -35,28 +34,28 @@ $(document).ready(function () {
       .text(content.text)
       .appendTo(tweet);
     const footer = $('<footer>')
-      .addClass("tweet-bottom")
+      .addClass('tweet-bottom')
       .text(moment(created_at).fromNow())
-      .addClass("icons")
+      .addClass('icons')
       .appendTo(tweet);
     const icons =  $('<div>')
-      .addClass("icons")
+      .addClass('icons')
       .appendTo(footer);
       $('<i>')
-      .addClass("fas fa-flag")
+      .addClass('fas fa-flag')
       .appendTo(icons);
       $('<i>')
-      .addClass("fas fa-retweet")
+      .addClass('fas fa-retweet')
       .appendTo(icons);
       $('<i>')
-      .addClass("fas fa-heart")
+      .addClass('fas fa-heart')
       .appendTo(icons);
-    //     //
+  
     return tweet;
   }
 
   function loadTweets() {
-      $.get("/tweets")
+      $.get('/tweets')
       .then((data) => {
         renderTweets(data)
       })
@@ -78,14 +77,12 @@ $(document).ready(function () {
         loadTweets(newTweet);
         $textarea.val('');
         $counter.text(140);
-      })
+      });
     }  
-  })
-
+  });
   $('.compose').click(function() {
     console.log("click");
     $('.new-tweet').slideToggle()
     $('.textarea').focus();
   });
-
-})
+});
