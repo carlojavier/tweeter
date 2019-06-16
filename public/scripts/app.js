@@ -1,8 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 $(document).ready(function () {
   
   $('.new-tweet').slideToggle()
@@ -81,7 +76,6 @@ $(document).ready(function () {
     }  
   });
   $('.compose').click(function() {
-    console.log("click");
     $('.new-tweet').slideToggle()
     $('.textarea').focus();
   });
