@@ -16,8 +16,11 @@ To demonstrate development and skills with front-end based tools.
 ## FINAL PRODUCT
 
 !["Screenshot of the main page with tweet compose box hidden"] (https://github.com/carlojavier/tweeter/blob/master/docs/tweets-hidden.png?raw=true)
+
 !["Screenshot of the main page with the tweet compose box open"] (https://github.com/carlojavier/tweeter/blob/master/docs/tweets.png?raw=true)
+
 !["Screenshot of the tweets with the character counter active"] (https://github.com/carlojavier/tweeter/blob/master/docs/tweets-character-counter.png?raw=true)
+
 !["Screenshot of the tweets with the error message on display"] (https://github.com/carlojavier/tweeter/blob/master/docs/tweets-error-messages.png?raw=true)
 
 
